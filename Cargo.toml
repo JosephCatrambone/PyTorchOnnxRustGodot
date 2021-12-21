@@ -1,0 +1,13 @@
+[package]
+name = "pix2cat_godot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gdnative = { version = "0.9.3", features = ["bindings", "gdnative-bindings"] }
+gdnative-derive = "0.9.3"
+image = "0.23.14"
+tract-onnx = "0.15.8"
+
+[lib]
+crate-type = ["cdylib"]

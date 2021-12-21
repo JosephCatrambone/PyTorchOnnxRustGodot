@@ -1,0 +1,8 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://Pix2Cat.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+resource_name = "Pix2Cat"
+class_name = "Pix2Cat"
+library = ExtResource( 1 )

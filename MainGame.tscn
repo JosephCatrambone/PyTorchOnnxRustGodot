@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MainGame.gd" type="Script" id=1]
+
+[node name="AppMain" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputCenter" type="CenterContainer" parent="UI"]
+margin_right = 460.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="InputTextureRect" type="TextureRect" parent="UI/InputCenter"]
+margin_left = 166.0
+margin_top = 236.0
+margin_right = 294.0
+margin_bottom = 364.0
+rect_min_size = Vector2( 128, 128 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+expand = true
+stretch_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI"]
+margin_left = 464.0
+margin_right = 559.0
+margin_bottom = 600.0
+
+[node name="RunButton" type="Button" parent="UI/VBoxContainer"]
+margin_right = 95.0
+margin_bottom = 284.0
+size_flags_vertical = 3
+text = "Do The Thing"
+
+[node name="ClearButton" type="Button" parent="UI/VBoxContainer"]
+margin_top = 288.0
+margin_right = 95.0
+margin_bottom = 572.0
+size_flags_vertical = 3
+text = "Reset"
+
+[node name="AutoRefresh" type="CheckBox" parent="UI/VBoxContainer"]
+margin_top = 576.0
+margin_right = 95.0
+margin_bottom = 600.0
+text = "Auto"
+align = 1
+
+[node name="OutputCenter" type="CenterContainer" parent="UI"]
+margin_left = 563.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="OutputTextureRect" type="TextureRect" parent="UI/OutputCenter"]
+margin_left = 166.0
+margin_top = 236.0
+margin_right = 294.0
+margin_bottom = 364.0
+rect_min_size = Vector2( 128, 128 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
